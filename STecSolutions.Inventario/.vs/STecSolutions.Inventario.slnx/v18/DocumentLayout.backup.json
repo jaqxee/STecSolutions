@@ -82,8 +82,7 @@
               "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaModelo.xaml",
               "RelativeToolTip": "STecSolutions.Inventario\\VentanaModelo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-30T23:59:18.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T23:59:18.691Z"
             },
             {
               "$type": "Document",
@@ -130,8 +129,7 @@
               "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaAgregar.xaml",
               "RelativeToolTip": "STecSolutions.Inventario\\VentanaAgregar.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-30T23:55:51.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T23:55:51.44Z"
             },
             {
               "$type": "Document",
@@ -143,8 +141,7 @@
               "RelativeToolTip": "STecSolutions.Inventario\\VentanaAgregar.xaml.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T05:05:40.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-29T05:05:40.571Z"
             }
           ]
         }

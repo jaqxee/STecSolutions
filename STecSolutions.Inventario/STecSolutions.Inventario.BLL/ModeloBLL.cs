@@ -18,5 +18,10 @@ namespace STecSolutions.Inventario.BLL
             ModeloDAL modeloDal = new ModeloDAL();
              return modeloDal.InsertarModelo(modelo);
         }
+
+        public List<Modelo> MostrarDatos() 
+        {
+             return new ModeloDAL().ObtenerListaModelo();
+        }
     }
 }

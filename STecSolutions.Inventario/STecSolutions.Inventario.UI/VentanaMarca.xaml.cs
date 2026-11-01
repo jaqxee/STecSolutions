@@ -9,6 +9,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using STecSolutions.Inventario.BLL;
+using STecSolutions.Inventario.Entities;
+using STecSolutions.Inventario.Entities.Excepciones;
 
 namespace STecSolutions.Inventario.UI
 {
@@ -17,6 +20,7 @@ namespace STecSolutions.Inventario.UI
     /// </summary>
     public partial class VentanaMarca : Window
     {
+        public int IdMarca { get; set; }
         public VentanaMarca()
         {
             InitializeComponent();
@@ -24,7 +28,15 @@ namespace STecSolutions.Inventario.UI
 
         private void btnGuardarMarcaNueva_Click(object sender, RoutedEventArgs e)
         {
-
+            Marca marca = new Marca();
+            marca.Nombre = this.txtMarca.Text;
+            try
+            {
+                int IdMarca = new MarcaBLL().InsertarDatos(marca);
+                this.DialogResult = true;
+            }
+            catch (NegocioException ex) { MessageBox.Show(ex.Message,"Campo Obligatorio",MessageBoxButton.OK,MessageBoxImage.Warning); }
+            catch (Exception ex) { MessageBox.Show("Error al conectar con la Base de Datos" + ex.Message, "Error del Sistema", MessageBoxButton.OK,MessageBoxImage.Error); }
         }
     }
 }

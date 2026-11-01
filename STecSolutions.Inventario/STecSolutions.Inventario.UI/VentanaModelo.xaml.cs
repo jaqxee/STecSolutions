@@ -26,9 +26,31 @@ namespace STecSolutions.Inventario.UI
             InitializeComponent();
         }
 
+        private void CargaSeguraCmbMarca(object sender, RoutedEventArgs e) 
+        {
+            CargarComboMarca(); ///////////////////// Te falta hacer metodo dal de cargar datos
+        }
+        private void CargarComboMarca(int IdMarca)
+        {
+            if (IdMarca == null || IdMarca == 0)
+            {
+                this.cmbIdMarca.I = new List<string> { "No hay registro" };
+                this.cmbIdMarca.SelectedIndex = 0;
+            }
+            else 
+            {
+                this.cmbIdMarca.DisplayMemberPath = "Nombre";
+                this.cmbIdMarca.SelectedValuePath = "IdMarca";   
+            }
+        }
+
         private void btnNuevaMarca_Click(object sender, RoutedEventArgs e)
         {
-
+            VentanaMarca ventanaMarca = new VentanaMarca();
+            if (ventanaMarca.ShowDialog() == true) 
+            {
+                CargarComboMarca(ventanaMarca.IdMarca);
+            }
         }
 
         private void btnGuardarModeloNuevo_Click(object sender, RoutedEventArgs e)
@@ -38,9 +60,10 @@ namespace STecSolutions.Inventario.UI
                 Modelo modelo = new Modelo();
                 modelo.NombreModelo = txtNombre.Text;
                 modelo.IdMarca = (cmbIdMarca.SelectedValue == null) ? 0 : (int)cmbIdMarca.SelectedValue;            
-                ModeloBLL modeloBLL = new ModeloBLL();
-                this.Id = modeloBLL.InsertarDatos(modelo);
-                this.DialogResult = true;
+                if (ventanaMarca.ShowDialog() = true) 
+                {
+                
+                }
             }
             catch (NegocioException ex)
             {
@@ -51,5 +74,7 @@ namespace STecSolutions.Inventario.UI
                 MessageBox.Show("Error al conectar con la Base de Datos: "+ ex.Message, "Error de Sistema", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6PQTnRt14Os=",
+  "dgSpecHash": "oIL7YSujc+Q=",
   "success": true,
-  "projectFilePath": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj",
+  "projectFilePath": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jaqxe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
     "C:\\Users\\jaqxe\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",

@@ -85,7 +85,8 @@ namespace STecSolutions.Inventario.UI
             VentanaModelo nuevaVentanaModelo = new VentanaModelo();
             if (nuevaVentanaModelo.ShowDialog() == true) 
             {
-                CargarComboBoxes(cmbModelo,); /// QUEDE AQUIIIII PORQUE HAY QUE HACER EL METODO DE CARGAR LISTAS DE MODELO!!!!!!!!!!!
+                CargarComboBoxes(cmbModelo, new ModeloBLL().MostrarDatos(), "IdModelo", "NombreModelo"); /// QUEDE AQUIIIII PORQUE HAY QUE HACER EL METODO DE CARGAR LISTAS DE MODELO!!!!!!!!!!!
+                cmbModelo.SelectedValue = nuevaVentanaModelo.Id;
             }
         }
 

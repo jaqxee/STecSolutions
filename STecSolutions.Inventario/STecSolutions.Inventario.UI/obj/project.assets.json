@@ -245,11 +245,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj",
+      "projectUniqueName": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj",
       "projectName": "STecSolutions.Inventario.UI",
-      "projectPath": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj",
+      "projectPath": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj",
       "packagesPath": "C:\\Users\\jaqxe\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\obj\\",
+      "outputPath": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
