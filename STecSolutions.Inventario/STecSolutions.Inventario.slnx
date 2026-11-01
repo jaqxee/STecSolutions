@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="STecSolutions.Inventario.BLL/STecSolutions.Inventario.BLL.csproj" Id="e796a1d4-8b53-415a-9d9d-6291801ce6fa" />
+  <Project Path="STecSolutions.Inventario.DAL/STecSolutions.Inventario.DAL.csproj" Id="5c7500c4-5842-4aa9-a1e6-bbc91ef1c465" />
+  <Project Path="STecSolutions.Inventario.Entities/STecSolutions.Inventario.Entities.csproj" Id="8669efbe-b92a-416c-af7e-c6a73097def5" />
+  <Project Path="STecSolutions.Inventario/STecSolutions.Inventario.UI.csproj" />
+</Solution>

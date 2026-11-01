@@ -1,0 +1,40 @@
+﻿<Window x:Class="STecSolutions.Inventario.UI.VentanaModelo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:STecSolutions.Inventario.UI"
+        mc:Ignorable="d"
+        Title="Agregar Modelo" Height="175" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FocusManager.FocusedElement="{Binding ElementName=txtNombre}">
+
+    <Window.Resources>
+        <Style x:Key="EstiloBtn" TargetType="Button" BasedOn="{StaticResource MiEstiloBtn}"></Style>
+    </Window.Resources>
+    
+    <Grid Margin="30,30,30,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Nombre:" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBox x:Name="txtNombre" Grid.Row="0" Grid.Column="1" Margin="5" Padding="5"/>
+
+        <Label Content="Marca:" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="cmbIdMarca" Grid.Row="0" Grid.Column="0" Margin="5" Padding="5"/>
+            <Button x:Name="btnNuevaMarca" Content="+" Grid.Row="0" Grid.Column="1" Width="30" Margin="0,5,5,5" FontWeight="Bold" Foreground="White" Background="#FF339933" Click="btnNuevaMarca_Click"/>
+        </Grid>
+        <Button x:Name="btnGuardarModeloNuevo" Content="Guardar Modelo" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="0,5,0,0" Style="{StaticResource EstiloBtn}" Background="#FF339933" Click="btnGuardarModeloNuevo_Click"/>
+    </Grid>
+</Window>

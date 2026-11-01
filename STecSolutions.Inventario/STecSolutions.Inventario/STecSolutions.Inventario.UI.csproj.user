@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="VentanaAgregar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaAgregarUbicacion.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaAgregarUsuario.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaConsultar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaEliminar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaEstadoOperativo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaMarca.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaModelo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaSistemaOperativo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="VentanaTipoEquipo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
