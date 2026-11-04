@@ -93,7 +93,7 @@ namespace STecSolutions.Inventario.UI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/STecSolutions.Inventario.UI;V1.0.0.0;component/ventanainicio.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/STecSolutions.Inventario.UI;component/ventanainicio.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\VentanaInicio.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

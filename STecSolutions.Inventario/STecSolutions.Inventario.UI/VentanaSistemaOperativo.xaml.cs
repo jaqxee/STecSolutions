@@ -9,6 +9,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using STecSolutions.Inventario.Entities;
+using STecSolutions.Inventario.BLL;
+using STecSolutions.Inventario.Entities.Excepciones;
 
 namespace STecSolutions.Inventario.UI
 {
@@ -17,6 +20,7 @@ namespace STecSolutions.Inventario.UI
     /// </summary>
     public partial class VentanaSistemaOperativo : Window
     {
+        public int Id { get; set; }
         public VentanaSistemaOperativo()
         {
             InitializeComponent();
@@ -24,7 +28,17 @@ namespace STecSolutions.Inventario.UI
 
         private void btnNuevoSistemaOperativo_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                SistemaOperativo sistemaOperativo = new SistemaOperativo();
+                sistemaOperativo.Nombre = txtNombre.Text;
+                sistemaOperativo.Version = txtVersion.Text;
+                Id = new SistemaOperativoBLL().InsertarDatos(sistemaOperativo);
+                DialogResult = true;
+            }
+            catch (NegocioException ex) { MessageBox.Show(ex.Message, "Campo Obligatorio", MessageBoxButton.OK, MessageBoxImage.Warning); }
 
+            catch (Exception ex) { MessageBox.Show("Error al conectar con la Base de Datos" + ex.Message, "Error de Sistema", MessageBoxButton.OK, MessageBoxImage.Error); }
         }
     }
 }

@@ -77,7 +77,7 @@ namespace STecSolutions.Inventario.UI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/STecSolutions.Inventario.UI;V1.0.0.0;component/ventanasistemaoperativo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/STecSolutions.Inventario.UI;component/ventanasistemaoperativo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\VentanaSistemaOperativo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -28,28 +28,18 @@ namespace STecSolutions.Inventario.UI
 
         private void CargaSeguraCmbMarca(object sender, RoutedEventArgs e) 
         {
-            CargarComboMarca(); ///////////////////// Te falta hacer metodo dal de cargar datos
+            UtilidadesUI.CargarComboBoxes(cmbIdMarca, new MarcaBLL().MostrarDatos(), "IdMarca","Nombre");
         }
-        private void CargarComboMarca(int IdMarca)
-        {
-            if (IdMarca == null || IdMarca == 0)
-            {
-                this.cmbIdMarca.I = new List<string> { "No hay registro" };
-                this.cmbIdMarca.SelectedIndex = 0;
-            }
-            else 
-            {
-                this.cmbIdMarca.DisplayMemberPath = "Nombre";
-                this.cmbIdMarca.SelectedValuePath = "IdMarca";   
-            }
-        }
+
 
         private void btnNuevaMarca_Click(object sender, RoutedEventArgs e)
         {
             VentanaMarca ventanaMarca = new VentanaMarca();
             if (ventanaMarca.ShowDialog() == true) 
             {
-                CargarComboMarca(ventanaMarca.IdMarca);
+                UtilidadesUI.CargarComboBoxes(cmbIdMarca, new MarcaBLL().MostrarDatos(), "IdMarca", "Nombre");
+                cmbIdMarca.SelectedValue = ventanaMarca.IdMarca;
+
             }
         }
 
@@ -59,11 +49,9 @@ namespace STecSolutions.Inventario.UI
             {
                 Modelo modelo = new Modelo();
                 modelo.NombreModelo = txtNombre.Text;
-                modelo.IdMarca = (cmbIdMarca.SelectedValue == null) ? 0 : (int)cmbIdMarca.SelectedValue;            
-                if (ventanaMarca.ShowDialog() = true) 
-                {
-                
-                }
+                modelo.IdMarca = (cmbIdMarca.SelectedItem == null) ? 0 : (int)cmbIdMarca.SelectedValue;
+                Id = new ModeloBLL().InsertarDatos(modelo);
+                this.DialogResult = true;
             }
             catch (NegocioException ex)
             {

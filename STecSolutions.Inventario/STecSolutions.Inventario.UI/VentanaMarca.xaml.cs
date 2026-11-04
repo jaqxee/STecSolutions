@@ -32,7 +32,7 @@ namespace STecSolutions.Inventario.UI
             marca.Nombre = this.txtMarca.Text;
             try
             {
-                int IdMarca = new MarcaBLL().InsertarDatos(marca);
+                IdMarca = new MarcaBLL().InsertarDatos(marca);
                 this.DialogResult = true;
             }
             catch (NegocioException ex) { MessageBox.Show(ex.Message,"Campo Obligatorio",MessageBoxButton.OK,MessageBoxImage.Warning); }

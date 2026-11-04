@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("STecSolutions.Inventario.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea2e7506a8c00de1e2f5641dbb806341d3096f25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a216959b3edb980c16398f44a55724014242226c")]
 [assembly: System.Reflection.AssemblyProductAttribute("STecSolutions.Inventario.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("STecSolutions.Inventario.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

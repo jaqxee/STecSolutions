@@ -9,3 +9,16 @@ C:\Users\jaqxe\OneDrive\Escritorio\Entrega_STecSolutions\STecSolutions.Inventari
 C:\Users\jaqxe\OneDrive\Escritorio\Entrega_STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\refint\STecSolutions.Inventario.Entities.dll
 C:\Users\jaqxe\OneDrive\Escritorio\Entrega_STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.pdb
 C:\Users\jaqxe\OneDrive\Escritorio\Entrega_STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\ref\STecSolutions.Inventario.Entities.dll
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\bin\Debug\net10.0\STecSolutions.Inventario.Entities.deps.json
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\bin\Debug\net10.0\STecSolutions.Inventario.Entities.dll
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\bin\Debug\net10.0\STecSolutions.Inventario.Entities.pdb
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.AssemblyInfoInputs.cache
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.AssemblyInfo.cs
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.csproj.CoreCompileInputs.cache
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.sourcelink.json
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.dll
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\refint\STecSolutions.Inventario.Entities.dll
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolutions.Inventario.Entities.pdb
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\ref\STecSolutions.Inventario.Entities.dll
+C:\Proyectos\STecSolutions\STecSolutions.Inventario\STecSolutions.Inventario.Entities\obj\Debug\net10.0\STecSolu.50A7E5B1.Up2Date

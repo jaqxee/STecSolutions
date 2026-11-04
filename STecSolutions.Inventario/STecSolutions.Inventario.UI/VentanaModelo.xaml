@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:STecSolutions.Inventario.UI"
         mc:Ignorable="d"
-        Title="Agregar Modelo" Height="175" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FocusManager.FocusedElement="{Binding ElementName=txtNombre}"
+        Title="Agregar Modelo" Height="190" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" FocusManager.FocusedElement="{Binding ElementName=txtNombre}"
         Loaded="CargaSeguraCmbMarca">
 
     <Window.Resources>

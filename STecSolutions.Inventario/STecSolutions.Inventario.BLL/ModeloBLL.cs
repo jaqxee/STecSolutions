@@ -11,7 +11,7 @@ namespace STecSolutions.Inventario.BLL
     {
         public int InsertarDatos(Modelo modelo) 
         {
-            if (modelo.IdMarca <= 0) throw new NegocioException("El campo Marca tiene un valor inválido");
+            if (modelo.IdMarca == 0) throw new NegocioException("El campo Marca tiene un valor inválido");
 
             if (string.IsNullOrWhiteSpace(modelo.NombreModelo)) throw new NegocioException("Debe ingresar el nombre del modelo");
 

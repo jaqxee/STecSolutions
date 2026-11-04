@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C7500C4-5842-4AA9-A1E6-BBC91EF1C465}|STecSolutions.Inventario.DAL\\STecSolutions.Inventario.DAL.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.dal\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7500C4-5842-4AA9-A1E6-BBC91EF1C465}|STecSolutions.Inventario.DAL\\STecSolutions.Inventario.DAL.csproj|solutionrelative:stecsolutions.inventario.dal\\conexionbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02C51B75-A1E5-721D-9716-C36FCA0E9956}|STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.ui\\ventanasistemaoperativo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C51B75-A1E5-721D-9716-C36FCA0E9956}|STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj|solutionrelative:stecsolutions.inventario.ui\\ventanasistemaoperativo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario\\ventanaagregar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|solutionrelative:stecsolutions.inventario\\ventanaagregar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02C51B75-A1E5-721D-9716-C36FCA0E9956}|STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.ui\\ventanasistemaoperativo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{02C51B75-A1E5-721D-9716-C36FCA0E9956}|STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj|solutionrelative:stecsolutions.inventario.ui\\ventanasistemaoperativo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C7500C4-5842-4AA9-A1E6-BBC91EF1C465}|STecSolutions.Inventario.DAL\\STecSolutions.Inventario.DAL.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.dal\\modelodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7500C4-5842-4AA9-A1E6-BBC91EF1C465}|STecSolutions.Inventario.DAL\\STecSolutions.Inventario.DAL.csproj|solutionrelative:stecsolutions.inventario.dal\\modelodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E796A1D4-8B53-415A-9D9D-6291801CE6FA}|STecSolutions.Inventario.BLL\\STecSolutions.Inventario.BLL.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.bll\\sistemaoperativobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E796A1D4-8B53-415A-9D9D-6291801CE6FA}|STecSolutions.Inventario.BLL\\STecSolutions.Inventario.BLL.csproj|solutionrelative:stecsolutions.inventario.bll\\sistemaoperativobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E796A1D4-8B53-415A-9D9D-6291801CE6FA}|STecSolutions.Inventario.BLL\\STecSolutions.Inventario.BLL.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.bll\\modelobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E796A1D4-8B53-415A-9D9D-6291801CE6FA}|STecSolutions.Inventario.BLL\\STecSolutions.Inventario.BLL.csproj|solutionrelative:stecsolutions.inventario.bll\\modelobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02C51B75-A1E5-721D-9716-C36FCA0E9956}|STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.ui\\ventanaagregar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C51B75-A1E5-721D-9716-C36FCA0E9956}|STecSolutions.Inventario.UI\\STecSolutions.Inventario.UI.csproj|solutionrelative:stecsolutions.inventario.ui\\ventanaagregar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8669EFBE-B92A-416C-AF7E-C6A73097DEF5}|STecSolutions.Inventario.Entities\\STecSolutions.Inventario.Entities.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.entities\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8669EFBE-B92A-416C-AF7E-C6A73097DEF5}|STecSolutions.Inventario.Entities\\STecSolutions.Inventario.Entities.csproj|solutionrelative:stecsolutions.inventario.entities\\modelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario\\ventanamodelo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|solutionrelative:stecsolutions.inventario\\ventanamodelo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario\\ventanamodelo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|solutionrelative:stecsolutions.inventario\\ventanamodelo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario\\ventanaagregar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{20FEDCF4-AF83-D94B-CF0B-A19F008CFB96}|STecSolutions.Inventario\\STecSolutions.Inventario.UI.csproj|solutionrelative:stecsolutions.inventario\\ventanaagregar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5C7500C4-5842-4AA9-A1E6-BBC91EF1C465}|STecSolutions.Inventario.DAL\\STecSolutions.Inventario.DAL.csproj|c:\\proyectos\\stecsolutions\\stecsolutions.inventario\\stecsolutions.inventario.dal\\sistemaoperativodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7500C4-5842-4AA9-A1E6-BBC91EF1C465}|STecSolutions.Inventario.DAL\\STecSolutions.Inventario.DAL.csproj|solutionrelative:stecsolutions.inventario.dal\\sistemaoperativodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,98 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConexionBD.cs",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.DAL\\ConexionBD.cs",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario.DAL\\ConexionBD.cs",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.DAL\\ConexionBD.cs",
-              "RelativeToolTip": "STecSolutions.Inventario.DAL\\ConexionBD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T00:42:06.291Z",
+              "DocumentIndex": 1,
+              "Title": "VentanaSistemaOperativo.xaml",
+              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml",
+              "RelativeDocumentMoniker": "STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml",
+              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml",
+              "RelativeToolTip": "STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-04T08:04:39.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VentanaModelo.xaml.cs",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaModelo.xaml.cs",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario\\VentanaModelo.xaml.cs",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaModelo.xaml.cs",
-              "RelativeToolTip": "STecSolutions.Inventario\\VentanaModelo.xaml.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "VentanaSistemaOperativo.xaml.cs",
+              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml.cs",
+              "RelativeDocumentMoniker": "STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml.cs",
+              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml.cs",
+              "RelativeToolTip": "STecSolutions.Inventario.UI\\VentanaSistemaOperativo.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACgAAACqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T01:22:58.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VentanaModelo.xaml",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaModelo.xaml",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario\\VentanaModelo.xaml",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaModelo.xaml",
-              "RelativeToolTip": "STecSolutions.Inventario\\VentanaModelo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-30T23:59:18.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Modelo.cs",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.Entities\\Modelo.cs",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario.Entities\\Modelo.cs",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.Entities\\Modelo.cs",
-              "RelativeToolTip": "STecSolutions.Inventario.Entities\\Modelo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T00:01:44.572Z"
+              "WhenOpened": "2026-11-04T08:04:41.418Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ModeloDAL.cs",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.DAL\\ModeloDAL.cs",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario.DAL\\ModeloDAL.cs",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.DAL\\ModeloDAL.cs",
-              "RelativeToolTip": "STecSolutions.Inventario.DAL\\ModeloDAL.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAARAAAAAAAAAA==",
+              "Title": "SistemaOperativoBLL.cs",
+              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.BLL\\SistemaOperativoBLL.cs",
+              "RelativeDocumentMoniker": "STecSolutions.Inventario.BLL\\SistemaOperativoBLL.cs",
+              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.BLL\\SistemaOperativoBLL.cs",
+              "RelativeToolTip": "STecSolutions.Inventario.BLL\\SistemaOperativoBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T23:58:52.542Z"
+              "WhenOpened": "2026-11-04T07:43:31.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SistemaOperativoDAL.cs",
+              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.DAL\\SistemaOperativoDAL.cs",
+              "RelativeDocumentMoniker": "STecSolutions.Inventario.DAL\\SistemaOperativoDAL.cs",
+              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.DAL\\SistemaOperativoDAL.cs",
+              "RelativeToolTip": "STecSolutions.Inventario.DAL\\SistemaOperativoDAL.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAADIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T07:27:09.9Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ModeloBLL.cs",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.BLL\\ModeloBLL.cs",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario.BLL\\ModeloBLL.cs",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.BLL\\ModeloBLL.cs",
-              "RelativeToolTip": "STecSolutions.Inventario.BLL\\ModeloBLL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T23:56:37.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VentanaAgregar.xaml",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaAgregar.xaml",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario\\VentanaAgregar.xaml",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaAgregar.xaml",
-              "RelativeToolTip": "STecSolutions.Inventario\\VentanaAgregar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-30T23:55:51.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "VentanaAgregar.xaml.cs",
-              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaAgregar.xaml.cs",
-              "RelativeDocumentMoniker": "STecSolutions.Inventario\\VentanaAgregar.xaml.cs",
-              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario\\VentanaAgregar.xaml.cs",
-              "RelativeToolTip": "STecSolutions.Inventario\\VentanaAgregar.xaml.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\VentanaAgregar.xaml.cs",
+              "RelativeDocumentMoniker": "STecSolutions.Inventario.UI\\VentanaAgregar.xaml.cs",
+              "ToolTip": "C:\\Proyectos\\STecSolutions\\STecSolutions.Inventario\\STecSolutions.Inventario.UI\\VentanaAgregar.xaml.cs",
+              "RelativeToolTip": "STecSolutions.Inventario.UI\\VentanaAgregar.xaml.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAAC0AAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T05:05:40.571Z"
+              "WhenOpened": "2026-11-03T13:53:53.137Z",
+              "EditorCaption": ""
             }
           ]
         }

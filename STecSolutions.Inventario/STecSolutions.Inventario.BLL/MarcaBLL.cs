@@ -14,5 +14,11 @@ namespace STecSolutions.Inventario.BLL
             if (string.IsNullOrWhiteSpace(marca.Nombre)) throw new NegocioException("Ingrese un valor en el campo Nombre");
             return new MarcaDAL().InsertarMarca(marca);
         }
+    
+
+    public List<Marca> MostrarDatos()
+        {
+            return new MarcaDAL().ObtenerListaMarca();
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace STecSolutions.Inventario.UI
 {
     public partial class VentanaAgregar : Window
     {
-        private int _idEquipoAActualizar;
+        private int _modoAActualizar;
         public VentanaAgregar()
         {
             InitializeComponent();
@@ -40,31 +40,14 @@ namespace STecSolutions.Inventario.UI
         {
             try
             {
-                CargarComboBoxes(cmbTipo, new TipoEquipoBLL().MostrarDatos(), "IdTipoEquipo", "Nombre");
+                UtilidadesUI.CargarComboBoxes(cmbTipo, new TipoEquipoBLL().MostrarDatos(), "IdTipoEquipo", "Nombre");
+                UtilidadesUI.CargarComboBoxes(cmbModelo, new ModeloBLL().MostrarDatos(), "IdModelo", "NombreModelo");
+                UtilidadesUI.CargarComboBoxes(cmbProcesador, new ProcesadorBLL().MostrarDatos(), "IdProcesador", "Marca");
+                UtilidadesUI.CargarComboBoxes(cmbSistemaOperativo, new SistemaOperativoBLL().MostrarDatos(),"IdSistemaOperativo", "Nombre");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al conectar con la Base de Datos: " + ex.Message, "Error de Sistema", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private void CargarComboBoxes(ComboBox nombrecmb, IList listaentidades, string campoId, string campoNombre)
-        {
-            if (listaentidades != null && listaentidades.Count > 0)
-            {
-                nombrecmb.DisplayMemberPath = campoNombre;
-                nombrecmb.SelectedValuePath = campoId;
-                nombrecmb.ItemsSource = listaentidades;
-                nombrecmb.IsEnabled = true;
-                nombrecmb.SelectedIndex = -1;
-            }
-            else
-            {
-                nombrecmb.DisplayMemberPath = null;
-                nombrecmb.SelectedValuePath = null;
-                nombrecmb.ItemsSource = new List<string> {"No hay registros"};
-                nombrecmb.SelectedIndex = 0;
-                nombrecmb.IsEnabled = false;
             }
         }
 
@@ -73,7 +56,7 @@ namespace STecSolutions.Inventario.UI
             VentanaTipoEquipo nuevaVentanaTipo = new VentanaTipoEquipo();
             if (nuevaVentanaTipo.ShowDialog() == true) 
             {
-                CargarComboBoxes(cmbTipo, new TipoEquipoBLL().MostrarDatos(), "IdTipoEquipo", "Nombre");
+                UtilidadesUI.CargarComboBoxes(cmbTipo, new TipoEquipoBLL().MostrarDatos(), "IdTipoEquipo", "Nombre");
                 cmbTipo.SelectedValue = nuevaVentanaTipo.IdTipoEquipo;
             }
             
@@ -85,14 +68,30 @@ namespace STecSolutions.Inventario.UI
             VentanaModelo nuevaVentanaModelo = new VentanaModelo();
             if (nuevaVentanaModelo.ShowDialog() == true) 
             {
-                CargarComboBoxes(cmbModelo, new ModeloBLL().MostrarDatos(), "IdModelo", "NombreModelo"); /// QUEDE AQUIIIII PORQUE HAY QUE HACER EL METODO DE CARGAR LISTAS DE MODELO!!!!!!!!!!!
+                UtilidadesUI.CargarComboBoxes(cmbModelo, new ModeloBLL().MostrarDatos(), "IdModelo", "NombreModelo"); /// QUEDE AQUIIIII PORQUE HAY QUE HACER EL METODO DE CARGAR LISTAS DE MODELO!!!!!!!!!!!
                 cmbModelo.SelectedValue = nuevaVentanaModelo.Id;
             }
         }
 
-        private void btnNuevoProcesador_Click(object sender, RoutedEventArgs e) { }
+        private void btnNuevoProcesador_Click(object sender, RoutedEventArgs e)
+        {
+            VentanaProcesador ventanaProcesador = new VentanaProcesador();
+            if (ventanaProcesador.ShowDialog() == true) 
+            {
+                UtilidadesUI.CargarComboBoxes(cmbProcesador, new ProcesadorBLL().MostrarDatos(), "IdProcesador", "Marca");
+                cmbProcesador.SelectedValue = ventanaProcesador.Id;
+            }
+        }
 
-        private void btnNuevoSistemaOperativo_Click(object sender, RoutedEventArgs e) { }
+        private void btnNuevoSistemaOperativo_Click(object sender, RoutedEventArgs e) 
+        {
+            VentanaSistemaOperativo ventanaSistemaOperativo = new VentanaSistemaOperativo();
+            if(ventanaSistemaOperativo.ShowDialog() == true)
+            {
+                UtilidadesUI.CargarComboBoxes(cmbSistemaOperativo, new SistemaOperativoBLL().MostrarDatos(), "IdSistemaOperativo", "Nombre");
+                cmbSistemaOperativo.SelectedValue = ventanaSistemaOperativo.Id;
+            }
+        }
 
         private void btnNuevoUsuario_Click(object sender, RoutedEventArgs e) { }
 

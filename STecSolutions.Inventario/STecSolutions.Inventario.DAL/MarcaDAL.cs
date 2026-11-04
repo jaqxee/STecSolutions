@@ -23,5 +23,30 @@ namespace STecSolutions.Inventario.DAL
                 }
             }
         }
+
+        public List<Marca> ObtenerListaMarca() 
+        {
+            List<Marca> lista = new List<Marca>();
+            using (NpgsqlConnection conexion = ConexionBD.ObtenerConexion())
+            {
+                string query = """
+                    SELECT id_marca, nombre FROM marca;
+                    """;
+                using(NpgsqlCommand comando = new NpgsqlCommand(query, conexion))
+                {
+                    using (NpgsqlDataReader lector = comando.ExecuteReader()) 
+                    {
+                        while (lector.Read())
+                        {
+                            Marca marca = new Marca();
+                            marca.IdMarca = Convert.ToInt32(lector["id_marca"]);
+                            marca.Nombre = lector["nombre"].ToString();
+                            lista.Add(marca);
+                        }
+                    }
+                }
+            }
+            return lista;
+        }
     }
 }
