@@ -25,10 +25,10 @@
         </Grid.ColumnDefinitions>
 
         <Label Content="Nombre Completo:" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center"  FontWeight="Bold" />
-        <TextBox x:Name="txtUNombre" Grid.Row="0" Grid.Column="1" Margin="5" Padding="5" />
+        <TextBox x:Name="txtNombre" Grid.Row="0" Grid.Column="1" Margin="5" Padding="5" />
 
         <Label Content="Email:" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBox x:Name="txtUEmail" Grid.Row="1" Grid.Column="1" Margin="5" Padding="5"/>
+        <TextBox x:Name="txtEmail" Grid.Row="1" Grid.Column="1" Margin="5" Padding="5"/>
 
         <Label Content="Departamento:" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <TextBox x:Name="txtDepartamento" Grid.Row="2" Grid.Column="1" Margin="5" Padding="5"/>

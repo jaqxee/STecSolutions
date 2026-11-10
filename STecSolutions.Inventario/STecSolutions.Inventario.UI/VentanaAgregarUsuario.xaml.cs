@@ -10,6 +10,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using STecSolutions.Inventario.Entities;
+using STecSolutions.Inventario.BLL;
+using STecSolutions.Inventario.Entities.Excepciones;
 
 namespace STecSolutions.Inventario
 {
@@ -18,6 +21,7 @@ namespace STecSolutions.Inventario
     /// </summary>
     public partial class VentanaAgregarUsuario : Window
     {
+        public int Id { get; private set; }
 
         public VentanaAgregarUsuario()
         {
@@ -26,7 +30,17 @@ namespace STecSolutions.Inventario
 
         private void btnGuardarUsuario_Click(object sender, RoutedEventArgs e)
         {
-
+            Usuario responsable = new Usuario();
+            responsable.NombreCompleto = txtNombre.Text;
+            responsable.Email = txtEmail.Text;
+            responsable.Departamento = txtDepartamento.Text;
+            try
+            {
+                Id = new UsuarioBLL().InsertarDatos(responsable);
+                this.DialogResult = true;
+            }
+            catch (NegocioException ex) { MessageBox.Show(ex.Message,"Campo Obligaorio",MessageBoxButton.OK,MessageBoxImage.Warning); }
+            catch (Exception ex) { MessageBox.Show("Error al conectar con la Base de datos: " + ex.Message,"Error del Sistema",MessageBoxButton.OK,MessageBoxImage.Error); }
         }
     }
 }

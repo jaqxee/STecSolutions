@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("STecSolutions.Inventario.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a216959b3edb980c16398f44a55724014242226c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb0387fadf4c368cc7f363a5cb71220237acb6fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("STecSolutions.Inventario.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("STecSolutions.Inventario.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

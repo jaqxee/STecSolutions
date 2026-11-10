@@ -44,6 +44,7 @@ namespace STecSolutions.Inventario.UI
                 UtilidadesUI.CargarComboBoxes(cmbModelo, new ModeloBLL().MostrarDatos(), "IdModelo", "NombreModelo");
                 UtilidadesUI.CargarComboBoxes(cmbProcesador, new ProcesadorBLL().MostrarDatos(), "IdProcesador", "Marca");
                 UtilidadesUI.CargarComboBoxes(cmbSistemaOperativo, new SistemaOperativoBLL().MostrarDatos(),"IdSistemaOperativo", "Nombre");
+                UtilidadesUI.CargarComboBoxes(cmbUsuario, new UsuarioBLL().MostrarDatos(), "IdUsuario", "NombreCompleto");
             }
             catch (Exception ex)
             {
@@ -93,7 +94,15 @@ namespace STecSolutions.Inventario.UI
             }
         }
 
-        private void btnNuevoUsuario_Click(object sender, RoutedEventArgs e) { }
+        private void btnNuevoUsuario_Click(object sender, RoutedEventArgs e) 
+        {
+            VentanaAgregarUsuario ventanaUsuario = new VentanaAgregarUsuario();
+            if (ventanaUsuario.ShowDialog() == true)
+            {
+                UtilidadesUI.CargarComboBoxes(cmbUsuario, new UsuarioBLL().MostrarDatos(), "IdUsuario", "NombreCompleto");
+                cmbUsuario.SelectedValue = ventanaUsuario.Id;
+            }
+        }
 
         private void btnNuevaUbicacion_Click(object sender, RoutedEventArgs e) { }
 
