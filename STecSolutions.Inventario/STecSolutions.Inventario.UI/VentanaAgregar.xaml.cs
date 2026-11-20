@@ -45,6 +45,8 @@ namespace STecSolutions.Inventario.UI
                 UtilidadesUI.CargarComboBoxes(cmbProcesador, new ProcesadorBLL().MostrarDatos(), "IdProcesador", "Marca");
                 UtilidadesUI.CargarComboBoxes(cmbSistemaOperativo, new SistemaOperativoBLL().MostrarDatos(),"IdSistemaOperativo", "Nombre");
                 UtilidadesUI.CargarComboBoxes(cmbUsuario, new UsuarioBLL().MostrarDatos(), "IdUsuario", "NombreCompleto");
+                UtilidadesUI.CargarComboBoxes(cmbUbicacion, new UbicacionBLL().MostrarDatos(), "IdUbicacion", "Sede");
+                UtilidadesUI.CargarComboBoxes(cmbEstado, new EstadoOperativoBLL().MostrarDatos(), "IdEstadoOperativo", "Nombre");
             }
             catch (Exception ex)
             {
@@ -58,7 +60,7 @@ namespace STecSolutions.Inventario.UI
             if (nuevaVentanaTipo.ShowDialog() == true) 
             {
                 UtilidadesUI.CargarComboBoxes(cmbTipo, new TipoEquipoBLL().MostrarDatos(), "IdTipoEquipo", "Nombre");
-                cmbTipo.SelectedValue = nuevaVentanaTipo.IdTipoEquipo;
+                cmbTipo.SelectedValue = nuevaVentanaTipo.Id;
             }
             
         }
@@ -69,7 +71,7 @@ namespace STecSolutions.Inventario.UI
             VentanaModelo nuevaVentanaModelo = new VentanaModelo();
             if (nuevaVentanaModelo.ShowDialog() == true) 
             {
-                UtilidadesUI.CargarComboBoxes(cmbModelo, new ModeloBLL().MostrarDatos(), "IdModelo", "NombreModelo"); /// QUEDE AQUIIIII PORQUE HAY QUE HACER EL METODO DE CARGAR LISTAS DE MODELO!!!!!!!!!!!
+                UtilidadesUI.CargarComboBoxes(cmbModelo, new ModeloBLL().MostrarDatos(), "IdModelo", "NombreModelo"); 
                 cmbModelo.SelectedValue = nuevaVentanaModelo.Id;
             }
         }
@@ -104,10 +106,53 @@ namespace STecSolutions.Inventario.UI
             }
         }
 
-        private void btnNuevaUbicacion_Click(object sender, RoutedEventArgs e) { }
+        private void btnNuevaUbicacion_Click(object sender, RoutedEventArgs e) 
+        {
+            VentanaAgregarUbicacion ventanaUbicacion = new VentanaAgregarUbicacion();
+            if (ventanaUbicacion.ShowDialog() == true)
+            {
+                UtilidadesUI.CargarComboBoxes(cmbUbicacion, new UbicacionBLL().MostrarDatos(), "IdUbicacion", "Sede");
+                cmbUbicacion.SelectedValue = ventanaUbicacion.Id;
+            }
+        } 
 
-        private void btnNuevoEstado_Click(object sender, RoutedEventArgs e) { }
+        private void btnNuevoEstado_Click(object sender, RoutedEventArgs e) 
+        {
+            VentanaEstadoOperativo ventanaEstadoOperativo = new VentanaEstadoOperativo();
+            if (ventanaEstadoOperativo.ShowDialog() == true) 
+            {
+                UtilidadesUI.CargarComboBoxes(cmbEstado, new EstadoOperativoBLL().MostrarDatos(), "IdEstadoOperativo", "Nombre");
+                cmbEstado.SelectedValue = ventanaEstadoOperativo.Id;
+            }
+        }
 
+        private int ObtenerIdCombo(ComboBox combo) 
+        {
+            return combo.SelectedValue is int id ? id: 0;
+        }
+
+        private void clickRegistrar(object sender, RoutedEventArgs e)
+        {
+            InventarioTecnologico inventario = new InventarioTecnologico();
+            inventario.CodigoInventario = txtCodInventario.Text.Trim();
+            inventario.IdTipoEquipo = ObtenerIdCombo(cmbTipo);
+            inventario.IdModelo = ObtenerIdCombo(cmbModelo);
+            inventario.IdProcesador = ObtenerIdCombo(cmbProcesador);
+            inventario.MemoriaRam = txtMemoriaRam.Text.Trim();
+            inventario.CapacidadAlmacenamiento = txtAlmacenamiento.Text.Trim();
+            inventario.IdSistemaOperativo = ObtenerIdCombo(cmbSistemaOperativo);
+            inventario.IdUsuarioResponsable = ObtenerIdCombo(cmbUsuario);
+            inventario.IdUbicacion = ObtenerIdCombo(cmbUbicacion);
+            inventario.IdEstadoOperativo = ObtenerIdCombo(cmbEstado);
+            try
+            {
+                new InventarioTecnologicoBLL().InsertarActivoTecnologico(inventario);
+                MessageBox.Show("El activo ha sido guardado con éxito","Registrado Exitosamente",MessageBoxButton.OK,MessageBoxImage.Information);
+                this.DialogResult = true;
+            }
+            catch (NegocioException ex) { MessageBox.Show(ex.Message,"Campo Obligatorio",MessageBoxButton.OK, MessageBoxImage.Warning); }
+            catch (Exception ex) { MessageBox.Show("Error al conectar con la Base de Datos: " + ex.Message,"Error de Sistema",MessageBoxButton.OK,MessageBoxImage.Error); }
+        }
 
     }
 }

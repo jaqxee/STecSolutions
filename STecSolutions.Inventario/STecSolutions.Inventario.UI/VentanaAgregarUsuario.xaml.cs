@@ -39,7 +39,7 @@ namespace STecSolutions.Inventario
                 Id = new UsuarioBLL().InsertarDatos(responsable);
                 this.DialogResult = true;
             }
-            catch (NegocioException ex) { MessageBox.Show(ex.Message,"Campo Obligaorio",MessageBoxButton.OK,MessageBoxImage.Warning); }
+            catch (NegocioException ex) { MessageBox.Show(ex.Message,"Campo Obligatorio",MessageBoxButton.OK,MessageBoxImage.Warning); }
             catch (Exception ex) { MessageBox.Show("Error al conectar con la Base de datos: " + ex.Message,"Error del Sistema",MessageBoxButton.OK,MessageBoxImage.Error); }
         }
     }

@@ -124,7 +124,7 @@
         </Grid>
 
         <!-- Botón Guardar -->
-        <Button x:Name="btnRegistrarDatos" Content="Registrar" Grid.Row="10" Grid.Column="1" Margin="0,5,0,0" Background="#FF339933" Style="{StaticResource EstiloBtn}"/> <!-- Click="clickHibrido" -->   
+        <Button x:Name="btnRegistrarDatos" Content="Registrar" Grid.Row="10" Grid.Column="1" Margin="0,5,0,0" Background="#FF339933" Style="{StaticResource EstiloBtn}" Click="clickRegistrar"/>
 
     </Grid>
 </Window>

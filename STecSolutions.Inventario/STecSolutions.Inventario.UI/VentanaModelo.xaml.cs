@@ -49,7 +49,7 @@ namespace STecSolutions.Inventario.UI
             {
                 Modelo modelo = new Modelo();
                 modelo.NombreModelo = txtNombre.Text;
-                modelo.IdMarca = (cmbIdMarca.SelectedItem == null) ? 0 : (int)cmbIdMarca.SelectedValue;
+                modelo.IdMarca = cmbIdMarca.SelectedValue is int ? Convert.ToInt32(cmbIdMarca.SelectedValue) : 0;
                 Id = new ModeloBLL().InsertarDatos(modelo);
                 this.DialogResult = true;
             }

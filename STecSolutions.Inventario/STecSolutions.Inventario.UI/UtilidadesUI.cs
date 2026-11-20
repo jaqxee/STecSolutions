@@ -8,8 +8,20 @@ namespace STecSolutions.Inventario.UI
 {
     public class UtilidadesUI
     {
+        private class ItemCombo
+        {
+            public int Id { get; set; }
+            public string Nombre { get; set; }
+
+            public ItemCombo(int id, string nombre)
+                {
+                    Id = id;
+                    Nombre = nombre;
+                }
+        }
         public static void CargarComboBoxes(ComboBox nombrecmb, IList listaentidades, string campoId, string campoNombre)
         {
+
             if (listaentidades != null && listaentidades.Count > 0)
             {
                 nombrecmb.DisplayMemberPath = campoNombre;
@@ -20,9 +32,11 @@ namespace STecSolutions.Inventario.UI
             }
             else
             {
-                nombrecmb.DisplayMemberPath = null;
-                nombrecmb.SelectedValuePath = null;
-                nombrecmb.ItemsSource = new List<string> { "No hay registros" };
+                List<ItemCombo> itemVacio = new List<ItemCombo>();
+                itemVacio.Add(new ItemCombo(0,"No hay registros")); 
+                nombrecmb.DisplayMemberPath = "Nombre";
+                nombrecmb.SelectedValuePath = "Id";
+                nombrecmb.ItemsSource = itemVacio;
                 nombrecmb.SelectedIndex = 0;
                 nombrecmb.IsEnabled = false;
             }

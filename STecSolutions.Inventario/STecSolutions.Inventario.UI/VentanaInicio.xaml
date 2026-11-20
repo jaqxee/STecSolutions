@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:STecSolutions.Inventario"
         mc:Ignorable="d"
-        Title="Ventana Principal" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Ventana Principal" Height="450" Width="800" WindowStartupLocation="CenterScreen"
+        Loaded="CargaSegura">
 
     <Window.Resources>
         <Style x:Key="EstiloBtn" TargetType="Button" BasedOn="{StaticResource MiEstiloBtn}">

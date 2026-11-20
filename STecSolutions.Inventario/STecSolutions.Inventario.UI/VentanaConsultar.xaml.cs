@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -9,6 +10,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using STecSolutions.Inventario.Entities;
+using STecSolutions.Inventario.BLL;
+using STecSolutions.Inventario.Entities.DTO;
 
 namespace STecSolutions.Inventario.UI
 {
@@ -17,14 +21,36 @@ namespace STecSolutions.Inventario.UI
     /// </summary>
     public partial class VentanaConsultar : Window
     {
-        public VentanaConsultar()
+        private readonly string _idConsultado;
+        public VentanaConsultar(string idConsultado)
         {
             InitializeComponent();
+            _idConsultado = idConsultado;
+        }
+
+        private void CargaSegura(object sender, RoutedEventArgs e) 
+        {
+            CargarVentana();
+        }
+
+        public void CargarVentana()
+        {
+            InventarioConsultaDTO inventario = new InventarioTecnologicoBLL().MostrarDatos(_idConsultado);
+            txbTipo.Text = inventario.TipoEquipo;
+            txbMarca.Text = inventario.Marca;
+            txbModelo.Text = inventario.Modelo;
+            txbProcesador.Text = inventario.Procesador;
+            txbMemoriaRam.Text = inventario.MemoriaRam;
+            txbAlmacenamiento.Text = inventario.CapacidadAlmacenamiento;
+            txbSistemaOperativo.Text = inventario.SistemaOperativo;
+            txbUsuario.Text = inventario.UsuarioResponsable;
+            txbUbicacion.Text = inventario.Ubicacion;
+            txbEstado.Text = inventario.EstadoOperativo;
         }
 
         private void btnCerrarConsultar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
     }
 }

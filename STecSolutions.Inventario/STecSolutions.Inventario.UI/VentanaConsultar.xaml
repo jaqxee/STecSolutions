@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:STecSolutions.Inventario"
         mc:Ignorable="d"
-        Title="Consultar Equipo" Height="440" Width="450" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Consultar Equipo" Height="440" Width="450" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Loaded="CargaSegura">
 
     <Window.Resources>
         <Style x:Key="EstiloBtn" TargetType="Button" BasedOn="{StaticResource MiEstiloBtn}">
@@ -15,6 +16,7 @@
 
     <Grid Margin="40">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -34,42 +36,45 @@
         <!-- Tipo de Equipo -->
         <Label Content="Tipo de Equipo:" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <TextBlock x:Name="txbTipo" Grid.Row="0" Grid.Column="1" Padding="5"/>
-        
+
+        <!-- Marca -->
+        <Label Content="Marca:" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbMarca" Grid.Row="1" Grid.Column="1" Padding="5"/>
 
         <!-- Modelo -->
-        <Label Content="Modelo:" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbModelo" Grid.Row="1" Grid.Column="1" Padding="5"/>
+        <Label Content="Modelo:" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbModelo" Grid.Row="2" Grid.Column="1" Padding="5"/>
 
             <!-- Procesador -->
-        <Label Content="Procesador:" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbProcesador" Grid.Row="2" Grid.Column="1" Padding="5"/>
+        <Label Content="Procesador:" Grid.Row="3" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbProcesador" Grid.Row="3" Grid.Column="1" Padding="5"/>
 
             <!-- Memoria RAM -->
-        <Label Content="RAM:" Grid.Row="3" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbMemoriaRam" Grid.Row="3" Grid.Column="1" Padding="5"/>
+        <Label Content="RAM:" Grid.Row="4" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbMemoriaRam" Grid.Row="4" Grid.Column="1" Padding="5"/>
 
         <!-- Capacidad Almacenamiento -->
-        <Label Content="Almacenamiento:" Grid.Row="4" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbAlmacenamiento" Grid.Row="4" Grid.Column="1" Padding="5"/>
+        <Label Content="Almacenamiento:" Grid.Row="5" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbAlmacenamiento" Grid.Row="5" Grid.Column="1" Padding="5"/>
 
         <!-- ID Sistema Operativo -->
-        <Label Content="Sistema Operativo:" Grid.Row="5" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbSistemaOperativo" Grid.Row="5" Grid.Column="1" Padding="5" />
+        <Label Content="Sistema Operativo:" Grid.Row="6" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbSistemaOperativo" Grid.Row="6" Grid.Column="1" Padding="5" />
 
             <!-- Usuario ID -->
-        <Label Content="Responsable:" Grid.Row="6" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbUsuario" Grid.Row="6" Grid.Column="1" Padding="5"/>
+        <Label Content="Responsable:" Grid.Row="7" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbUsuario" Grid.Row="7" Grid.Column="1" Padding="5"/>
 
             <!-- Ubicación ID -->
-        <Label Content="Ubicación:" Grid.Row="7" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbUbicacion" Grid.Row="7"  Grid.Column="1" Padding="5" />
+        <Label Content="Ubicación:" Grid.Row="8" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbUbicacion" Grid.Row="8"  Grid.Column="1" Padding="5" />
 
             <!-- Estado -->
-        <Label Content="Estado:" Grid.Row="8" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
-        <TextBlock x:Name="txbEstado" Grid.Row="8" Grid.Column="1" Padding="5"/>
+        <Label Content="Estado:" Grid.Row="9" Grid.Column="0" VerticalContentAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="txbEstado" Grid.Row="9" Grid.Column="1" Padding="5"/>
 
             <!-- Botón Guardar -->
-        <Button x:Name="btnCerrarConsultar" Content="Cerrar" Grid.Column="1" Grid.Row="9" Style="{StaticResource EstiloBtn}" Click="btnCerrarConsultar_Click" />
+        <Button x:Name="btnCerrarConsultar" Content="Cerrar" Grid.Column="1" Grid.Row="10" Style="{StaticResource EstiloBtn}" Click="btnCerrarConsultar_Click" />
 
     </Grid>
 </Window>

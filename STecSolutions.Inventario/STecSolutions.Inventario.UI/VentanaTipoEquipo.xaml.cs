@@ -22,7 +22,7 @@ namespace STecSolutions.Inventario.UI
     public partial class VentanaTipoEquipo : Window
     {
 
-        public int IdTipoEquipo { get; set; }
+        public int Id { get; set; }
         public VentanaTipoEquipo()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace STecSolutions.Inventario.UI
                 nuevoTipo.Nombre = txtNombre.Text;
                 nuevoTipo.Descripcion = txtDescripcion.Text;
                 TipoEquipoBLL tipoEquipoBLL = new TipoEquipoBLL();
-                IdTipoEquipo = tipoEquipoBLL.InsertarDatos(nuevoTipo);
+                Id = tipoEquipoBLL.InsertarDatos(nuevoTipo);
                 this.DialogResult = true;
             }
             catch (NegocioException ex)

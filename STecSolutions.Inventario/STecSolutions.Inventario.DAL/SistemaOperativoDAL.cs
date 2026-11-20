@@ -31,7 +31,7 @@ namespace STecSolutions.Inventario.DAL
             using (NpgsqlConnection conexion = ConexionBD.ObtenerConexion())
             {
                 string query = """
-                    SELECT id_sistema_operativo, nombre, version FROM sistema_operativo;
+                    SELECT id_sistema_operativo, nombre, version FROM sistema_operativo ORDER BY nombre;
                     """;
                 using (NpgsqlCommand comando = new NpgsqlCommand(query, conexion)) 
                 {

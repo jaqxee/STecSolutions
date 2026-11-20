@@ -30,7 +30,7 @@ namespace STecSolutions.Inventario.DAL
             using (NpgsqlConnection conexion  = ConexionBD.ObtenerConexion())
             {
                 string query = """
-                    SELECT id_procesador, marca, modelo_cpu FROM procesador;
+                    SELECT id_procesador, marca, modelo_cpu FROM procesador ORDER BY marca ASC;
                     """;
                 using (NpgsqlCommand comando = new NpgsqlCommand(query, conexion)) 
                 {

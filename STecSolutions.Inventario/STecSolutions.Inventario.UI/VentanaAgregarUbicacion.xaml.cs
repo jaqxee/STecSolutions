@@ -10,6 +10,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using STecSolutions.Inventario.Entities;
+using STecSolutions.Inventario.Entities.Excepciones;
+using STecSolutions.Inventario.BLL;
 
 namespace STecSolutions.Inventario.UI
 {
@@ -19,6 +22,7 @@ namespace STecSolutions.Inventario.UI
     public partial class VentanaAgregarUbicacion : Window
     {
 
+        public int Id { get; private set; } 
         public VentanaAgregarUbicacion()
         {
             InitializeComponent();
@@ -26,7 +30,18 @@ namespace STecSolutions.Inventario.UI
 
         private void btnGuardarUbicacion_Click(object sender, RoutedEventArgs e)
         {
-
+            Ubicacion ubicacion = new Ubicacion();
+            try
+            {
+                ubicacion.Sede = txtSede.Text;
+                ubicacion.Edificio = txtEdificio.Text;
+                ubicacion.Piso = txtPiso.Text;
+                ubicacion.Oficina = txtOficina.Text;
+                Id = new UbicacionBLL().InsertarDatos(ubicacion);
+                this.DialogResult = true;
+            }
+            catch (NegocioException ex) { MessageBox.Show(ex.Message, "Campo Obligatorio", MessageBoxButton.OK, MessageBoxImage.Warning); }
+            catch (Exception ex) { MessageBox.Show("Error al conectar con la Base de Datos: " + ex.Message,"Error del Sistema",MessageBoxButton.OK, MessageBoxImage.Error); }
         }
     }
 }

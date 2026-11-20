@@ -30,7 +30,7 @@ namespace STecSolutions.Inventario.DAL
             using (NpgsqlConnection conexion = ConexionBD.ObtenerConexion())
             {
                 string query = """
-                    SELECT id_marca, nombre FROM marca;
+                    SELECT id_marca, nombre FROM marca ORDER BY nombre ASC;
                     """;
                 using(NpgsqlCommand comando = new NpgsqlCommand(query, conexion))
                 {

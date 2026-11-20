@@ -31,7 +31,7 @@ namespace STecSolutions.Inventario.DAL
             using (NpgsqlConnection conexion = ConexionBD.ObtenerConexion())
             {
                 string query = """
-                    SELECT id_usuario, nombre_completo, email, departamento FROM usuario;
+                    SELECT id_usuario, nombre_completo, email, departamento FROM usuario ORDER BY nombre_completo ASC;
                     """;
                 using (NpgsqlCommand comando = new NpgsqlCommand(query, conexion)) 
                 {

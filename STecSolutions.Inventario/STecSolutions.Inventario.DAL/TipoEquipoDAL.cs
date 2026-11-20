@@ -31,7 +31,7 @@ namespace STecSolutions.Inventario.DAL
             using (NpgsqlConnection conexion = ConexionBD.ObtenerConexion())
             {
                 string query = """
-                    SELECT id_tipo_equipo, nombre, descripcion FROM tipo_equipo;
+                    SELECT id_tipo_equipo, nombre, descripcion FROM tipo_equipo ORDER BY nombre ASC;
                     """;
                 using (NpgsqlCommand comando = new NpgsqlCommand(query, conexion)) 
                 {

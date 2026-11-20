@@ -33,7 +33,7 @@ namespace STecSolutions.Inventario.DAL
             using (NpgsqlConnection conexion = ConexionBD.ObtenerConexion()) 
             {
                 string query = """
-                    SELECT id_modelo, id_marca, nombre_modelo FROM modelo;
+                    SELECT id_modelo, id_marca, nombre_modelo FROM modelo ORDER BY nombre_modelo ASC;
                     """;
 
                 using (NpgsqlCommand comando = new NpgsqlCommand(query, conexion)) 

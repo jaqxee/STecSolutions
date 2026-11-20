@@ -23,11 +23,13 @@ namespace STecSolutions.Inventario.UI
     {
         public VentanaInicio()
         {
-
             InitializeComponent();
-            CargarDatosInventario();
         }
 
+        private void CargaSegura(object sender, RoutedEventArgs e)
+        {
+            CargarDatosInventario();
+        }
         private void CargarDatosInventario()
         {
             try
@@ -45,8 +47,10 @@ namespace STecSolutions.Inventario.UI
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
             VentanaAgregar ventanaRegistro = new VentanaAgregar();
-            ventanaRegistro.ShowDialog();
-            CargarDatosInventario();
+            if (ventanaRegistro.ShowDialog() == true)
+            {
+                CargarDatosInventario();
+            }
         }
 
         private void btnEliminar_Click(object sender, RoutedEventArgs e) 
@@ -76,7 +80,16 @@ namespace STecSolutions.Inventario.UI
 
         private void btnConsultar_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (dgInventario.SelectedItem != null)
+            {
+                InventarioResumen filaSeleccionada = (InventarioResumen)dgInventario.SelectedItem;
+                VentanaConsultar ventanaConsultar = new VentanaConsultar(filaSeleccionada.CodInventario);
+                ventanaConsultar.ShowDialog();
+            }
+            else 
+            {
+                MessageBox.Show("Debe seleccionar una fila para consultar","Seleccione una fila",MessageBoxButton.OK,MessageBoxImage.Warning);
+            }
         }
 
 
