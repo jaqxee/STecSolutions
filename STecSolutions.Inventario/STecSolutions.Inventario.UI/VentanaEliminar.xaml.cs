@@ -10,6 +10,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using STecSolutions.Inventario.Entities.Excepciones;
+using STecSolutions.Inventario.BLL;
 
 namespace STecSolutions.Inventario.UI
 {
@@ -18,29 +20,39 @@ namespace STecSolutions.Inventario.UI
     /// </summary>
     public partial class VentanaEliminar : Window
     {
-        public VentanaEliminar()
+        private readonly string _idEliminar;
+        public VentanaEliminar(string idEliminar)
         {
             InitializeComponent();
+            _idEliminar = idEliminar;
             //ContenidoEtiqueta();
         }
 
         private void btnConfirmarEliminar_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                new InventarioTecnologicoBLL().IdAEliminar(_idEliminar);
+                MessageBox.Show("El registro ha sido eliminado exitosamente","Registro eliminado",MessageBoxButton.OK,MessageBoxImage.Information);
+                this.DialogResult = true;
+            }
+            catch (NegocioException ex) { MessageBox.Show(ex.Message,"El registro ya no existe",MessageBoxButton.OK,MessageBoxImage.Warning); this.DialogResult = true; }
+            catch (Exception ex) { MessageBox.Show("Error al conectar con la Base de Datos: " + ex.Message,"Error de Sistema",MessageBoxButton.OK,MessageBoxImage.Error); }
         }
 
         private void btnCancelarEliminar_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();
         }
 
-        ///private void ContenidoEtiqueta() 
-        ///{
-        ///    VentanaInicio ventanaPrincipal = (VentanaInicio)Application.Current.MainWindow;
-        //   string serieRecibida = ventanaPrincipal.nroSerieEliminar;
-        //   mensajeEliminar.Text = $"""Está eliminando el equipo con numero de serie: {serieRecibida}""";
-        //}
+        private void ContenidoTextblock()
+        {
+            this.mensajeEliminar.Text = $"""Está eliminando el equipo con numero de serie: {_idEliminar}""";
+        }
 
-
+        private void CargaContenido(object sender, RoutedEventArgs e) 
+        {
+            ContenidoTextblock();
+        }
     }
 }

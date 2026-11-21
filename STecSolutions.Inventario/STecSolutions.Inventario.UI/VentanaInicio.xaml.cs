@@ -58,11 +58,10 @@ namespace STecSolutions.Inventario.UI
             
             if (dgInventario.SelectedItem != null)
             {
-                DataRowView filaSeleccionada = (DataRowView)dgInventario.SelectedItem;
+                InventarioResumen filaSeleccionada = (InventarioResumen)dgInventario.SelectedItem;
                 
-                VentanaEliminar ventanaEliminar = new VentanaEliminar();
-                ventanaEliminar.ShowDialog();
-                CargarDatosInventario();
+                VentanaEliminar ventanaEliminar = new VentanaEliminar(filaSeleccionada.CodInventario);
+                if (ventanaEliminar.ShowDialog() == true) { CargarDatosInventario(); }
             }
             else 
             {

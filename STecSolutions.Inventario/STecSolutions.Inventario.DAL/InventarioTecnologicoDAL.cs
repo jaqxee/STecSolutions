@@ -67,21 +67,24 @@ namespace STecSolutions.Inventario.DAL
                     comando.Parameters.AddWithValue("@codigo_inventario", IdConsultado);
                     using (NpgsqlDataReader lector = comando.ExecuteReader())
                     {
-                        lector.Read();
-                        InventarioConsultaDTO inventarioConsultado = new InventarioConsultaDTO();
-                        inventarioConsultado.CodigoInventario = lector["codigo_inventario"].ToString();
-                        inventarioConsultado.TipoEquipo = lector["tipo_equipo"].ToString();
-                        inventarioConsultado.Marca = lector["marca"].ToString();
-                        inventarioConsultado.Modelo = lector["modelo"].ToString();
-                        inventarioConsultado.Procesador = lector["procesador"].ToString();
-                        inventarioConsultado.MemoriaRam = lector["RAM"].ToString();
-                        inventarioConsultado.CapacidadAlmacenamiento = lector["capacidad_almacenamiento"].ToString();
-                        inventarioConsultado.SistemaOperativo = lector["sistema_operativo"].ToString();
-                        inventarioConsultado.UsuarioResponsable = lector["usuario"].ToString();
-                        inventarioConsultado.Ubicacion = lector["ubicacion"].ToString();
-                        inventarioConsultado.EstadoOperativo = lector["estado_operativo"].ToString();
-                        return inventarioConsultado;
-                    } /////// TIENES QUE CONSULTAR Y TRAER EL VALOR DE LOS CAMPOS QUE QUIERES Y DESPUES LLENAR el DTO 
+                        if (lector.Read())
+                        {
+                            InventarioConsultaDTO inventarioConsultado = new InventarioConsultaDTO();
+                            inventarioConsultado.CodigoInventario = lector["codigo_inventario"].ToString();
+                            inventarioConsultado.TipoEquipo = lector["tipo_equipo"].ToString();
+                            inventarioConsultado.Marca = lector["marca"].ToString();
+                            inventarioConsultado.Modelo = lector["modelo"].ToString();
+                            inventarioConsultado.Procesador = lector["procesador"].ToString();
+                            inventarioConsultado.MemoriaRam = lector["RAM"].ToString();
+                            inventarioConsultado.CapacidadAlmacenamiento = lector["capacidad_almacenamiento"].ToString();
+                            inventarioConsultado.SistemaOperativo = lector["sistema_operativo"].ToString();
+                            inventarioConsultado.UsuarioResponsable = lector["usuario"].ToString();
+                            inventarioConsultado.Ubicacion = lector["ubicacion"].ToString();
+                            inventarioConsultado.EstadoOperativo = lector["estado_operativo"].ToString();
+                            return inventarioConsultado;
+                        }
+                        else { return null;  }
+                    } 
                 }
             }
         }
@@ -95,6 +98,21 @@ namespace STecSolutions.Inventario.DAL
                     comando.Parameters.AddWithValue("@codigo", codigo);
                     object resultado = comando.ExecuteScalar();
                     if (resultado != null) return Convert.ToInt32(resultado); else return 0; 
+                }
+            }
+        }
+
+        public int EliminarRegistro(string Id) 
+        {
+            using (NpgsqlConnection conexion = ConexionBD.ObtenerConexion()) 
+            {
+                string nonQuery = """
+                    DELETE FROM inventario_tecnologico WHERE codigo_inventario = @codigo_inventario;
+                    """;
+                using (NpgsqlCommand comando = new NpgsqlCommand(nonQuery, conexion))
+                {
+                    comando.Parameters.AddWithValue("@codigo_inventario", Id);
+                     return comando.ExecuteNonQuery();
                 }
             }
         }

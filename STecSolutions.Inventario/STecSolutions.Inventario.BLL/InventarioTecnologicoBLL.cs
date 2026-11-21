@@ -28,7 +28,15 @@ namespace STecSolutions.Inventario.BLL
 
         public InventarioConsultaDTO MostrarDatos(string IdConsultado) 
         {
-            return new InventarioTecnologicoDAL().ObtenerInventarioTecnologico(IdConsultado);
+            InventarioConsultaDTO inventarioConsultado = new InventarioTecnologicoDAL().ObtenerInventarioTecnologico(IdConsultado);
+            if (inventarioConsultado == null) { throw new NegocioException("El equipo consultado ya no existe en la Base de Datos"); }
+            return inventarioConsultado;
+        }
+
+        public void IdAEliminar(string Id)
+        {
+            if (new InventarioTecnologicoDAL().ConsultarCodigo(Id) == 0) throw new NegocioException("No es posible hacer la operación porque ese registro ya fué eliminado");
+                new InventarioTecnologicoDAL().EliminarRegistro(Id);
         }
     }
 }

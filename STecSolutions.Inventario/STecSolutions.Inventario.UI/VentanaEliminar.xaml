@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:STecSolutions.Inventario"
         mc:Ignorable="d"
-        Title="Ventana Eliminar" Height="220" Width="420" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Ventana Eliminar" Height="220" Width="420" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Loaded="CargaContenido">
 
     <Window.Resources>
         <Style x:Key="EstiloBtn" TargetType="Button" BasedOn="{StaticResource MiEstiloBtn}">
